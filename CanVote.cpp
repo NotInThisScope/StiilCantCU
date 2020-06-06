@@ -1,15 +1,13 @@
-#include<iostream>
-using namespace std;
+#include <iostream>
+
 int main()
 {
-	int a;
-	cout<<"Enter your age : ";
-	cin>>a;
-	if(a<18)
-	cout<<"You are a minor,so you can't vote.";
-	else if(a>18)
-	cout<<"You are an adult,you can vote.";
-	else
-	cout<<"You still can't vote.Grow up!!";
+    int age;
+    std::cout << "Enter your age : ";
+    std::cin >> age;
+
+    age < 18 ? std::cout << "You are a minor. You can't vote!" : std::cout << "You are an adult. You can vote!";
+    std::cout << " \n";
+
 	return 0;
 }
